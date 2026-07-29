@@ -1,22 +1,45 @@
-# Code
-import base64, sys
-from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
-from cryptography.hazmat.primitives import hashes
-from cryptography.fernet import Fernet
+readme_content = """# 🛡️ Cybersecurity & Dev Toolkit
 
-SALT = b"novatech-lab-salt-2024"
+Uma coleção prática e modular de scripts em **Python** e **Bash** voltados para **Segurança da Informação, Redes, Forense Computacional, Automação Defensiva (Blue Team) e Administração de Sistemas**.
 
-def key_from_password(password: str) -> bytes:
-    kdf = PBKDF2HMAC(algorithm=hashes.SHA256(), length=32,
-                     salt=SALT, iterations=100_000)
-    return base64.urlsafe_b64encode(kdf.derive(password.encode()))
+Projetado para auditores de segurança, profissionais de TI e entusiastas que buscam ferramentas leves, sem dependências desnecessárias e prontas para uso em linha de comando (CLI).
 
-def encrypt(infile, outfile, password):
-    open(outfile, "wb").write(Fernet(key_from_password(password)).encrypt(open(infile, "rb").read()))
+---
 
-def decrypt(infile, outfile, password):
-    open(outfile, "wb").write(Fernet(key_from_password(password)).decrypt(open(infile, "rb").read()))
+## 🗂️ Estrutura do Repositório
 
-if __name__ == "__main__":
-    op, inf, outf, pwd = sys.argv[1:5]   # ex: python novacrypt.py encrypt fin.xlsx fin.novacrypt "V3rao@2024!"
-    (encrypt if op == "encrypt" else decrypt)(inf, outf, pwd)
+```text
+.
+├── 🌐 Reconhecimento & OSINT
+│   ├── check_spf_dmarc.py       # Validador de registros SPF/DMARC contra e-mail spoofing
+│   ├── dir_fuzzer.py            # Fuzzer assíncrono de diretórios web (aiohttp)
+│   ├── crt_subdomains.sh        # Coletor de subdomínios via Certificate Transparency (crt.sh)
+│   ├── check_ssl_expiry.py      # Verificador de expiração de certificados SSL/TLS
+│   └── check_security_hdrs.py   # Analisador de cabeçalhos HTTP de segurança (HSTS, CSP, etc.)
+│
+├── 🔍 Forense & Análise
+│   ├── calc_hashes.py           # Calculador simultâneo de hashes (MD5, SHA1, SHA256)
+│   ├── lsb_stego.py             # Extrator de mensagens ocultas LSB em imagens PNG
+│   ├── magic_bytes.sh           # Identificador de formato real via assinaturas hex (Magic Bytes)
+│   └── sqli_log_parser.py       # Parser de logs Nginx/Apache para detecção de SQL Injection
+│
+├── 🛰️ Redes & Auditoria
+│   ├── async_port_scanner.py    # Scanner de portas TCP ultra-rápido via asyncio
+│   ├── raw_packet_sniffer.py    # Sniffer leve de pacotes RAW IP/TCP
+│   ├── pcap_analyzer.py         # Parser e resumidor de capturas PCAP (Scapy)
+│   ├── async_ping_sweep.py      # Monitor de hosts ativos na rede local via ICMP
+│   └── active_conns.sh          # Monitor de conexões ativas e processos em tempo real
+│
+├── 🔐 Criptografia & Autenticação
+│   ├── file_encryptor.py        # Criptografia simétrica de arquivos com PBKDF2 + AES-GCM (Fernet)
+│   ├── bcrypt_manager.py        # Gerador e validador de hashes de senhas com bcrypt
+│   ├── aes_gcm_crypto.py        # Criptografia de dados AES-256-GCM com validação de tag
+│   └── jwt_inspector.py         # Inspector/Decoder de tokens JWT sem validação de chave
+│
+└── 🛡️ Defesa & Automação (Blue Team)
+    ├── file_integrity_fim.py    # FIM (File Integrity Monitor) baseado em hashes SHA256
+    ├── linux_hardening.sh       # Script de endurecimento e configuração inicial de servidores Linux
+    ├── xss_sanitizer.py         # Sanitizador de entradas string/HTML contra XSS
+    ├── ssh_bruteforce_block.sh  # Script de mitigação automatizada contra força bruta SSH
+    ├── backup_rotator.sh        # Automação de backups com compressão e retenção configurável
+    └── json_logger.php          # Logger PHP estruturado em JSON para auditorias de sistema
