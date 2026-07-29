@@ -1,4 +1,4 @@
-readme_content = """# 🛡️ Cybersecurity & Dev Toolkit
+# 🛡️ Cybersecurity & Dev Toolkit
 
 Uma coleção prática e modular de scripts em **Python** e **Bash** voltados para **Segurança da Informação, Redes, Forense Computacional, Automação Defensiva (Blue Team) e Administração de Sistemas**.
 
