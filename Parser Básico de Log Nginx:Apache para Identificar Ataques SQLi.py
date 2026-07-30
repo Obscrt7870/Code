@@ -7,7 +7,7 @@ SQLI_PATTERNS = [
     r"--",
     r"BENCHMARK\("
 ]
-
+ 
 def parse_access_log(log_path: str):
     compiled_patterns = [re.compile(p, re.IGNORECASE) for p in SQLI_PATTERNS]
     
