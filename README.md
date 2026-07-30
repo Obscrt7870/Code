@@ -12,9 +12,9 @@ Projetado para auditores de segurança, profissionais de TI e entusiastas que bu
 * PHP: 7.4+
 
 ### Instalação de Dependências Python
-ˋˋˋ
-pip install cryptography aiohttp scapy bcrypt Pillow dnspython
-ˋˋˋ
+
+`pip install cryptography aiohttp scapy bcrypt Pillow dnspython`
+
 
 ## 🗂️ Estrutura do Repositório
 
