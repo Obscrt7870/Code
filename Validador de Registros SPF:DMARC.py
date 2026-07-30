@@ -3,7 +3,7 @@ import dns.resolver
 def check_email_security(domain: str):
     print(f"=== Analisando Domínio: {domain} ===")
     
-    # Checar SPF
+    # Checar SPF 
     try:
         answers = dns.resolver.resolve(domain, 'TXT')
         spf_found = False
