@@ -3,7 +3,7 @@ import html
 def sanitize_user_input(raw_input: str) -> str:
     # Remove ou converte caracteres perigosos (<, >, &, ", ')
     sanitized = html.escape(raw_input.strip())
-    return sanitized
+    return sanitized 
 
 if __name__ == "__main__":
     malicious_payload = "<script>alert('XSS Executado!')</script>"
