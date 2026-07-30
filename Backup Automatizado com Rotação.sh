@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-
+ 
 # Configurações
 SOURCE_DIR="${1:-/var/log}"
 BACKUP_DIR="${2:-/tmp/backups}"
