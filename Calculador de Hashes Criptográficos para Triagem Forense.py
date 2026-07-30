@@ -1,5 +1,5 @@
 import hashlib
-
+ 
 def calculate_hashes(filepath: str):
     md5 = hashlib.md5()
     sha1 = hashlib.sha1()
