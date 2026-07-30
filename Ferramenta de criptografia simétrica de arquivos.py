@@ -10,4 +10,4 @@ def encrypt(infile, outfile, password): open(outfile, "wb").write(Fernet(key_fro
 
 def decrypt(infile, outfile, password): open(outfile, "wb").write(Fernet(key_from_password(password)).decrypt(open(infile, "rb").read()))
 
-if name == "main": op, inf, outf, pwd = sys.argv[1:5] # ex: python file.py encrypt fin.xlsx fin.novacrypt "V3rao@2024!" (encrypt if op == "encrypt" else decrypt)(inf, outf, pwd)
+if name == "main": op, inf, outf, pwd = sys.argv[1:5] # ex: python crypto.py encrypt fin.xlsx fin.crypto "V3rao@2024!" (encrypt if op == "encrypt" else decrypt)(inf, outf, pwd)
