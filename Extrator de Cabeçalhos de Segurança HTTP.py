@@ -7,7 +7,7 @@ SECURITY_HEADERS = [
     "X-Content-Type-Options",
     "Referrer-Policy"
 ]
-
+ 
 def analyze_headers(url: str):
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     try:
