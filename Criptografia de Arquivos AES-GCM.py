@@ -1,6 +1,6 @@
 import os
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
-
+ 
 def encrypt_data(data: bytes, key: bytes) -> tuple[bytes, bytes]:
     aesgcm = AESGCM(key)
     nonce = os.urandom(12)  # Nonce de 96 bits recomendado para GCM
