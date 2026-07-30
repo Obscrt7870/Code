@@ -1,6 +1,6 @@
 <?php
 
-class JsonLogger
+class JsonLogger 
 {
     private string $logFile;
 
