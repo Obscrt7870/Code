@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-
+ 
 LOG_FILE="/var/log/auth.log"
 THRESHOLD=5
 
