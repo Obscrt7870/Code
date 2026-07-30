@@ -8,7 +8,7 @@ def check_ssl_expiry(hostname: str, port: int = 443):
         with context.wrap_socket(sock, server_hostname=hostname) as ssock:
             cert = ssock.getpeercert()
             
-            # Formato de data: MMM DD HH:MM:SS YYYY GMT
+            # Formato de data: MMM DD HH:MM:SS YYYY GMT 
             date_fmt = r"%b %d %H:%M:%S %Y %Z"
             not_after = datetime.strptime(cert['notAfter'], date_fmt)
             days_left = (not_after - datetime.utcnow()).days
