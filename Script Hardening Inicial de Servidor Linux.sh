@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-
+ 
 if [[ $EUID -ne 0 ]]; then
    echo "Este script deve ser executado como root." 
    exit 1
