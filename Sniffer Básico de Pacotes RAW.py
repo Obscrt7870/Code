@@ -1,6 +1,6 @@
 import socket
 import struct
-
+ 
 def parse_ip_header(data):
     # Formato do cabeçalho IP: 20 bytes iniciais
     ip_header = struct.unpack('!BBHHHBBH4s4s', data[:20])
