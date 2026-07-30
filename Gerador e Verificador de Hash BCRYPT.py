@@ -1,5 +1,5 @@
 import bcrypt
-
+ 
 def hash_password(password: str) -> bytes:
     # Gera um salt e calcula o hash
     salt = bcrypt.gensalt(rounds=12)
