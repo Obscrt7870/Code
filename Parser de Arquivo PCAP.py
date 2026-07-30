@@ -3,7 +3,7 @@ from scapy.all import rdpcap, IP, TCP, UDP
 def analyze_pcap(pcap_file: str):
     print(f"[*] Analisando arquivo: {pcap_file}")
     packets = rdpcap(pcap_file)
-    
+     
     conversations = set()
     for pkt in packets:
         if IP in pkt:
