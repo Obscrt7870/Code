@@ -1,7 +1,7 @@
 import asyncio
 import subprocess
 import platform
-
+ 
 async def ping_host(ip: str):
     param = "-n" if platform.system().lower() == "windows" else "-c"
     cmd = ["ping", param, "1", "-w", "1000", ip]
