@@ -1,6 +1,6 @@
 import asyncio
 import aiohttp
-
+ 
 TARGET_URL = "http://127.0.0.1:8000"
 WORDLIST = ["admin", "login", "uploads", "backup.zip", "config.php", "db.sqldump"]
 
