@@ -3,7 +3,7 @@ import socket
 
 async def check_port(ip: str, port: int, timeout: float = 1.0):
     conn = asyncio.open_connection(ip, port)
-    try:
+    try: 
         reader, writer = await asyncio.wait_for(conn, timeout=timeout)
         print(f"[+] Porta {port:5d}/TCP aberta")
         writer.close()
