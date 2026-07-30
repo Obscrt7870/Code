@@ -6,6 +6,16 @@ Projetado para auditores de segurança, profissionais de TI e entusiastas que bu
 
 ---
 
+## 🛠️ Requisitos e Pré-requisitos
+
+    * Python: 3.9+
+
+    * Bash: Shell Unix/Linux padrão
+
+    * PHP: 7.4+
+
+### Instalação de Dependências Python
+
 ## 🗂️ Estrutura do Repositório
 
 ```text
