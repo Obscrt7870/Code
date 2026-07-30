@@ -18,14 +18,16 @@ Projetado para auditores de segurança, profissionais de TI e entusiastas que bu
 
 ## 🚀 Como Executar os Scripts
 
-###🌐 Reconhecimento & OSINT
+### 🌐 Reconhecimento & OSINT
 
 * Validador de Registros SPF:DMARC.py
-`python "Validador de Registros SPF:DMARC.py"`
-
+```
+python "Validador de Registros SPF:DMARC.py"`
+```
 * Fuzzer:Buster de Diretórios Web HTTP:HTTPS.py
-`python "Fuzzer:Buster de Diretórios Web HTTP:HTTPS.py"`
-
+```
+python "Fuzzer:Buster de Diretórios Web HTTP:HTTPS.py"`
+```
 * Extrator de Subdomínios via Certificate Transparency Logs.sh
 ```
 chmod +x "Extrator de Subdomínios via Certificate Transparency Logs.sh"
