@@ -4,7 +4,7 @@ Uma coleção prática e modular de scripts em **Python**, **Bash** e **PHP** vo
 
 ---
 
-## 🗂️ Estrutura de Arquivos
+## 🗂️ Estrutura de Arquivos 
 
 ```text
 .
