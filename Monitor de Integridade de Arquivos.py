@@ -1,7 +1,7 @@
 import os
 import hashlib
 import json
-
+ 
 HASH_DB = "integrity_db.json"
 
 def get_dir_hashes(directory: str) -> dict:
