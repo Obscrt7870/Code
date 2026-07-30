@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-
+ 
 FILE="${1:-}"
 
 if [[ -z "$FILE" || ! -f "$FILE" ]]; then
