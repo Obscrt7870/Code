@@ -3,7 +3,7 @@ from PIL import Image
 def extract_lsb(image_path: str, max_bytes: int = 100):
     img = Image.open(image_path).convert('RGB')
     binary_data = ""
-    
+     
     for y in range(img.height):
         for x in range(img.width):
             r, g, b = img.getpixel((x, y))
