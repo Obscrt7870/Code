@@ -7,14 +7,12 @@ Projetado para auditores de segurança, profissionais de TI e entusiastas que bu
 ---
 
 ## 🛠️ Requisitos e Pré-requisitos
-
-    * Python: 3.9+
-
-    * Bash: Shell Unix/Linux padrão
-
-    * PHP: 7.4+
+* Python: 3.9+
+* Bash: Shell Unix/Linux padrão
+* PHP: 7.4+
 
 ### Instalação de Dependências Python
+pip install cryptography aiohttp scapy bcrypt Pillow dnspython
 
 ## 🗂️ Estrutura do Repositório
 
