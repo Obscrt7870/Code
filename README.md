@@ -184,9 +184,3 @@ pip install cryptography aiohttp scapy bcrypt Pillow dnspython
   ```
 
 ---
-
-## ⚠️ AVISO LEGAL / DISCLAIMER
-Estes scripts destinam-se exclusivamente a fins educacionais, de pesquisa e auditoria de segurança autorizada. O uso indevido contra alvos sem permissão explícita é ilegal.
-
-## 📜 Licença
-Distribuído sob a licença MIT.
