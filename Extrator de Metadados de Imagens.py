@@ -1,6 +1,6 @@
 from PIL import Image
 from PIL.ExifTags import TAGS
-
+ 
 def extract_exif(image_path: str) -> dict:
     image = Image.open(image_path)
     exif_data = image._getexif()
