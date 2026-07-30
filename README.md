@@ -12,8 +12,9 @@ Projetado para auditores de segurança, profissionais de TI e entusiastas que bu
 * PHP: 7.4+
 
 ### Instalação de Dependências Python
-
-`pip install cryptography aiohttp scapy bcrypt Pillow dnspython`
+```
+pip install cryptography aiohttp scapy bcrypt Pillow dnspython
+```
 
 
 ## 🚀 Como Executar os Scripts
@@ -22,18 +23,115 @@ Projetado para auditores de segurança, profissionais de TI e entusiastas que bu
 
 * Validador de Registros SPF:DMARC.py
 ```
-python "Validador de Registros SPF:DMARC.py"`
+python "Validador de Registros SPF:DMARC.py"
 ```
 * Fuzzer:Buster de Diretórios Web HTTP:HTTPS.py
 ```
-python "Fuzzer:Buster de Diretórios Web HTTP:HTTPS.py"`
+python "Fuzzer:Buster de Diretórios Web HTTP:HTTPS.py"
 ```
 * Extrator de Subdomínios via Certificate Transparency Logs.sh
 ```
 chmod +x "Extrator de Subdomínios via Certificate Transparency Logs.sh"
 ./"Extrator de Subdomínios via Certificate Transparency Logs.sh" exemplo.com
 ```
-
+* Verificador de Expiração de Certificado SSL:TLS
+```
+python "Verificador de Expiração de Certificado SSL:TLS"
+```
+* Extrator de Cabeçalhos de Segurança HTTP.py
+```
+python "Extrator de Cabeçalhos de Segurança HTTP.py"
+```
+### 🔍 Forense & Análise
+* Calculador de Hashes Criptográficos para Triagem Forense.py
+```
+python "Calculador de Hashes Criptográficos para Triagem Forense.py" arquivo.ext
+```
+* Extrator de Strings LSB em Imagens.py
+```
+python "Extrator de Strings LSB em Imagens.py"
+```
+* Extrator de Metadados de Imagens.py
+```
+python "Extrator de Metadados de Imagens.py"
+```
+* Buscador de Assinaturas de Arquivos.sh
+```
+chmod +x "Buscador de Assinaturas de Arquivos.sh"
+./"Buscador de Assinaturas de Arquivos.sh" arquivo
+```
+* Parser Básico de Log Nginx:Apache para Identificar Ataques SQLi.py
+```
+python "Parser Básico de Log Nginx:Apache para Identificar Ataques SQLi.py"
+```
+## 🛰️ Redes & Auditoria
+* Port Scanner Assincrono.py
+```
+python "Port Scanner Assincrono.py"
+```
+* Sniffer Básico de Pacotes RAW.py
+```
+sudo python "Sniffer Básico de Pacotes RAW.py"
+```
+* Parser de Arquivo PCAP.py
+```
+python "Parser de Arquivo PCAP.py"
+```
+* Monitor de Dispositivos Ativos em Rede Local.py
+```
+python "Monitor de Dispositivos Ativos em Rede Local.py"
+```
+* Monitor de Conexões de Rede em Tempo Real.sh
+```
+chmod +x "Monitor de Conexões de Rede em Tempo Real.sh"
+./"Monitor de Conexões de Rede em Tempo Real.sh"
+```
+## 🔐 Criptografia & Autenticação
+* Ferramenta de criptografia simétrica de arquivos.py
+```
+python "Ferramenta de criptografia simétrica de arquivos.py" encrypt arquivo.xlsx arquivo.novacrypt "SuaSenha"
+python "Ferramenta de criptografia simétrica de arquivos.py" decrypt arquivo.novacrypt restaurado.xlsx "SuaSenha"
+```
+* Criptografia de Arquivos AES-GCM.py
+```
+python "Criptografia de Arquivos AES-GCM.py"
+```
+* Gerador e Verificador de Hash BCRYPT.py
+```
+python "Gerador e Verificador de Hash BCRYPT.py"
+```
+* Validador de Estrutura e Assinatura JWT.py
+```
+python "Validador de Estrutura e Assinatura JWT.py"
+```
+## 🛡️ Defesa, SysAdmin & Automação (Blue Team)
+* Monitor de Integridade de Arquivos.py
+```
+python "Monitor de Integridade de Arquivos.py"
+```
+* Script Hardening Inicial de Servidor Linux.sh
+```
+chmod +x "Script Hardening Inicial de Servidor Linux.sh"
+sudo ./"Script Hardening Inicial de Servidor Linux.sh"
+```
+* Sanitizador de Entradas HTML contra XSS.py
+```
+python "Sanitizador de Entradas HTML contra XSS.py"
+```
+* Bloqueador Automático de IPs via Log de Falhas SSH.sh
+```
+chmod +x "Bloqueador Automático de IPs via Log de Falhas SSH.sh"
+sudo ./"Bloqueador Automático de IPs via Log de Falhas SSH.sh"
+```
+* Backup Automatizado com Rotação.sh
+```
+chmod +x "Backup Automatizado com Rotação.sh"
+./"Backup Automatizado com Rotação.sh" /var/log /tmp/backups
+```
+* Sanitizador e Formatador de Logs JSON.php
+```
+php "Sanitizador e Formatador de Logs JSON.php"
+```
 
 ## 🗂️ Estrutura do Repositório
 
